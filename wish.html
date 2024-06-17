@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Greeting Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f0f2f5;
+        }
+
+        .greeting-container {
+            background-color: #fff;
+            padding: 40px;
+            border-radius: 15px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            position: relative;
+        }
+
+        h1 {
+            margin-bottom: 20px;
+            color: #007bff;
+            font-size: 36px;
+        }
+
+        p {
+            font-size: 18px;
+            color: #333;
+        }
+
+        .graphic {
+            position: absolute;
+            top: -30px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 60px;
+            height: 60px;
+            background-color: #007bff;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: #fff;
+            font-size: 30px;
+        }
+
+        .graphic::before {
+            content: "🎉";
+        }
+    </style>
+</head>
+<body>
+    <div class="greeting-container">
+        <div class="graphic"></div>
+        <h1>Welcome!</h1>
+        <p>Wishing you a wonderful day filled with happiness and success.</p>
+    </div>
+</body>
+</html>
